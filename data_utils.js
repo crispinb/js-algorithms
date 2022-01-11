@@ -1,9 +1,11 @@
 function generate_random_array(n) {
-    const arr = [];
+    const shuffled = [];
     for (let i = 0; i < n; i++) {
-        arr.push(Math.floor(Math.random() * Number.MAX_SAFE_INTEGER));
+        shuffled.push(i);
     }
-    return arr;
+    const sorted = [...shuffled];
+    shuffled.sort(() => 0.5 - Math.random())
+    return { shuffled: shuffled, sorted: sorted }
 }
 
 export { generate_random_array }
