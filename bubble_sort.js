@@ -1,19 +1,8 @@
 // TODO: compare to other implementations
 // TODO: any worthy enhancements?
 
-// Comments
-// Node destructuring is much slower than using a temp variable
-// eg with 100 el array:
-// bs:
-// 40 667 ops/s, ±2.14%   | 28.54% slower
-
-// limit:
-// 56 912 ops/s, ±2.15%   | fastest
-
-// limit & destructure:
-// 28 074 ops/s, ±3.76%   | slowest, 50.67% slower
-
 function bs(arr) {
+    arr = [...arr]
     let sorted = false;
     while (!sorted) {
         sorted = true;
@@ -30,6 +19,7 @@ function bs(arr) {
 }
 
 function bs_limit(arr) {
+    arr = [...arr]
     let unsorted_to = arr.length - 1;
     let sorted = false;
     while (!sorted) {
@@ -48,6 +38,7 @@ function bs_limit(arr) {
 }
 
 function bs_limit_destructured(arr) {
+    arr = [...arr]
     let unsorted_to = arr.length - 1;
     let sorted = false;
     while (!sorted) {
