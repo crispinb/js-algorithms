@@ -6,4 +6,4 @@ function generate_random_array(n) {
     return arr;
 }
 
-module.exports = { generate_random_array }
+export { generate_random_array }

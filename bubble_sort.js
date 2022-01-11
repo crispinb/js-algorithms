@@ -63,4 +63,4 @@ function bs_limit_destructured(arr) {
     return arr;
 }
 
-module.exports = { bs, bs_limit, bs_limit_destructured }
+export { bs, bs_limit, bs_limit_destructured }
