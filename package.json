@@ -1,0 +1,17 @@
+{
+  "name": "wengrow_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "benny": "^3.7.1",
+    "jest": "^27.4.7"
+  }
+}
