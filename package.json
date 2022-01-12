@@ -6,10 +6,11 @@
   "type": "module",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "//": "npm run dev for iterating on a new function without running all the perf tests",
+    "//": "npm run dev for iterating on a new function without running the perf tests",
     "dev": "NODE_OPTIONS=--experimental-vm-modules jest --watch -t dev"
   },
   "jest": {
+    "//": "no-transforms allows jest tests to use es imports",
     "transform": {}
   },
   "author": "",
